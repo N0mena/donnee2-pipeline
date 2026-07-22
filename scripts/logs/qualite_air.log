@@ -200,3 +200,11 @@
 2026-07-22 14:38:13,149 [INFO] Backfill Paris : 2026-07-01 -> 2026-07-21
 2026-07-22 14:38:16,063 [INFO] OK -> raw\PAR\PAR_history_20260701_20260721.json
 2026-07-22 14:38:17,064 [INFO] Backfill terminé : 5 succès, 0 échecs, 55 ignorés (déjà présents)
+2026-07-22 14:56:53,995 [WARNING] Dossier raw/ introuvable : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw
+2026-07-22 14:56:53,998 [INFO] Reconstruction de clean/ à partir de 0 fichier(s) raw/
+2026-07-22 14:56:53,999 [INFO] clean/qualite_air.csv reconstruit : 0 ligne(s) unique(s) (ville x heure)
+2026-07-22 15:01:39,413 [WARNING] Dossier raw/ introuvable : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw
+2026-07-22 15:01:39,414 [INFO] Reconstruction de clean/ à partir de 0 fichier(s) raw/
+2026-07-22 15:01:39,416 [INFO] clean/qualite_air.csv reconstruit : 0 ligne(s) unique(s) (ville x heure)
+2026-07-22 15:02:02,106 [INFO] Reconstruction de clean/ à partir de 70 fichier(s) raw/
+2026-07-22 15:02:05,695 [INFO] clean/qualite_air.csv reconstruit : 41501 ligne(s) unique(s) (ville x heure)
