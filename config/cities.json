@@ -1,0 +1,7 @@
+[
+  {"city": "Antananarivo", "country": "MG", "lat": -18.8792, "lon": 47.5079},
+  {"city": "Paris",        "country": "FR", "lat": 48.8566,  "lon": 2.3522},
+  {"city": "Amsterdam",    "country": "NL", "lat": 52.3676,  "lon": 4.9041},
+  {"city": "Beijing",      "country": "CN", "lat": 39.9042,  "lon": 116.4074},
+  {"city": "Nairobi",      "country": "KE", "lat": -1.2921,  "lon": 36.8219}
+]

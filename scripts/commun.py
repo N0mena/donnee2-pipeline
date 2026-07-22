@@ -13,8 +13,9 @@ API_KEY = os.environ.get("OPENWEATHER_API_KEY")
 URL_TEMPS_REEL = "https://api.openweathermap.org/data/2.5/air_pollution"
 URL_HISTORIQUE = "https://api.openweathermap.org/data/2.5/air_pollution/history"
 
-RAW_DIR = Path("raw")
-LOG_FILE = Path("logs/qualite_air.log")
+RACINE_PROJET = Path(__file__).resolve().parent.parent
+RAW_DIR = RACINE_PROJET / "raw"
+LOG_FILE = Path(__file__).resolve().parent / "logs" / "qualite_air.log"
 
 TIMEOUT_SECONDS = 15
 MAX_RETRIES = 3
