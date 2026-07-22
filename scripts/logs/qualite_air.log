@@ -1,0 +1,202 @@
+2026-07-16 20:30:03,462 [ERROR] OPENWEATHER_API_KEY non définie dans l'environnement. Arrêt.
+2026-07-16 20:30:14,008 [ERROR] OPENWEATHER_API_KEY non définie dans l'environnement.
+2026-07-16 20:32:53,813 [INFO] Collecte en cours pour Amsterdam (AMS)
+2026-07-16 20:32:55,376 [INFO] OK -> raw\AMS\AMS_20260716T173253Z.json
+2026-07-16 20:32:55,376 [INFO] Collecte en cours pour Antananarivo (TNR)
+2026-07-16 20:32:56,885 [INFO] OK -> raw\TNR\TNR_20260716T173253Z.json
+2026-07-16 20:32:56,886 [INFO] Collecte en cours pour Beijing (BJS)
+2026-07-16 20:32:58,458 [INFO] OK -> raw\BJS\BJS_20260716T173253Z.json
+2026-07-16 20:32:58,459 [INFO] Collecte en cours pour Londres (LON)
+2026-07-16 20:32:59,973 [INFO] OK -> raw\LON\LON_20260716T173253Z.json
+2026-07-16 20:32:59,974 [INFO] Collecte en cours pour Paris (PAR)
+2026-07-16 20:33:01,616 [INFO] OK -> raw\PAR\PAR_20260716T173253Z.json
+2026-07-16 20:33:01,616 [INFO] Collecte terminée : 5 succès, 0 échecs sur 5 villes
+2026-07-16 20:34:58,778 [INFO] Backfill démarré : 5 ville(s) x 12 mois = 60 appels prévus
+2026-07-16 20:34:58,792 [INFO] Backfill Amsterdam : 2025-08-01 -> 2025-08-31
+2026-07-16 20:35:01,317 [INFO] OK -> raw\AMS\AMS_history_20250801_20250831.json
+2026-07-16 20:35:02,319 [INFO] Backfill Amsterdam : 2025-09-01 -> 2025-09-30
+2026-07-16 20:35:04,696 [INFO] OK -> raw\AMS\AMS_history_20250901_20250930.json
+2026-07-16 20:35:05,697 [INFO] Backfill Amsterdam : 2025-10-01 -> 2025-10-31
+2026-07-16 20:35:07,842 [INFO] OK -> raw\AMS\AMS_history_20251001_20251031.json
+2026-07-16 20:35:08,843 [INFO] Backfill Amsterdam : 2025-11-01 -> 2025-11-30
+2026-07-16 20:35:11,315 [INFO] OK -> raw\AMS\AMS_history_20251101_20251130.json
+2026-07-16 20:35:12,316 [INFO] Backfill Amsterdam : 2025-12-01 -> 2025-12-31
+2026-07-16 20:35:14,408 [INFO] OK -> raw\AMS\AMS_history_20251201_20251231.json
+2026-07-16 20:35:15,409 [INFO] Backfill Amsterdam : 2026-01-01 -> 2026-01-31
+2026-07-16 20:35:17,506 [INFO] OK -> raw\AMS\AMS_history_20260101_20260131.json
+2026-07-16 20:35:18,507 [INFO] Backfill Amsterdam : 2026-02-01 -> 2026-02-28
+2026-07-16 20:35:20,811 [INFO] OK -> raw\AMS\AMS_history_20260201_20260228.json
+2026-07-16 20:35:21,814 [INFO] Backfill Amsterdam : 2026-03-01 -> 2026-03-31
+2026-07-16 20:35:23,871 [INFO] OK -> raw\AMS\AMS_history_20260301_20260331.json
+2026-07-16 20:35:24,873 [INFO] Backfill Amsterdam : 2026-04-01 -> 2026-04-30
+2026-07-16 20:35:27,023 [INFO] OK -> raw\AMS\AMS_history_20260401_20260430.json
+2026-07-16 20:35:28,024 [INFO] Backfill Amsterdam : 2026-05-01 -> 2026-05-31
+2026-07-16 20:35:30,305 [INFO] OK -> raw\AMS\AMS_history_20260501_20260531.json
+2026-07-16 20:35:31,306 [INFO] Backfill Amsterdam : 2026-06-01 -> 2026-06-30
+2026-07-16 20:35:33,951 [INFO] OK -> raw\AMS\AMS_history_20260601_20260630.json
+2026-07-16 20:35:34,952 [INFO] Backfill Amsterdam : 2026-07-01 -> 2026-07-15
+2026-07-16 20:35:39,030 [INFO] OK -> raw\AMS\AMS_history_20260701_20260715.json
+2026-07-16 20:35:40,033 [INFO] Backfill Antananarivo : 2025-08-01 -> 2025-08-31
+2026-07-16 20:35:43,730 [INFO] OK -> raw\TNR\TNR_history_20250801_20250831.json
+2026-07-16 20:35:44,732 [INFO] Backfill Antananarivo : 2025-09-01 -> 2025-09-30
+2026-07-16 20:35:47,724 [INFO] OK -> raw\TNR\TNR_history_20250901_20250930.json
+2026-07-16 20:35:48,726 [INFO] Backfill Antananarivo : 2025-10-01 -> 2025-10-31
+2026-07-16 20:35:51,056 [INFO] OK -> raw\TNR\TNR_history_20251001_20251031.json
+2026-07-16 20:35:52,057 [INFO] Backfill Antananarivo : 2025-11-01 -> 2025-11-30
+2026-07-16 20:35:54,177 [INFO] OK -> raw\TNR\TNR_history_20251101_20251130.json
+2026-07-16 20:35:55,178 [INFO] Backfill Antananarivo : 2025-12-01 -> 2025-12-31
+2026-07-16 20:35:57,836 [INFO] OK -> raw\TNR\TNR_history_20251201_20251231.json
+2026-07-16 20:35:58,838 [INFO] Backfill Antananarivo : 2026-01-01 -> 2026-01-31
+2026-07-16 20:36:01,163 [INFO] OK -> raw\TNR\TNR_history_20260101_20260131.json
+2026-07-16 20:36:02,171 [INFO] Backfill Antananarivo : 2026-02-01 -> 2026-02-28
+2026-07-16 20:36:04,163 [INFO] OK -> raw\TNR\TNR_history_20260201_20260228.json
+2026-07-16 20:36:05,166 [INFO] Backfill Antananarivo : 2026-03-01 -> 2026-03-31
+2026-07-16 20:36:07,489 [INFO] OK -> raw\TNR\TNR_history_20260301_20260331.json
+2026-07-16 20:36:08,490 [INFO] Backfill Antananarivo : 2026-04-01 -> 2026-04-30
+2026-07-16 20:36:10,569 [INFO] OK -> raw\TNR\TNR_history_20260401_20260430.json
+2026-07-16 20:36:11,570 [INFO] Backfill Antananarivo : 2026-05-01 -> 2026-05-31
+2026-07-16 20:36:13,896 [INFO] OK -> raw\TNR\TNR_history_20260501_20260531.json
+2026-07-16 20:36:14,898 [INFO] Backfill Antananarivo : 2026-06-01 -> 2026-06-30
+2026-07-16 20:36:17,184 [INFO] OK -> raw\TNR\TNR_history_20260601_20260630.json
+2026-07-16 20:36:18,185 [INFO] Backfill Antananarivo : 2026-07-01 -> 2026-07-15
+2026-07-16 20:36:20,330 [INFO] OK -> raw\TNR\TNR_history_20260701_20260715.json
+2026-07-16 20:36:21,332 [INFO] Backfill Beijing : 2025-08-01 -> 2025-08-31
+2026-07-16 20:36:23,956 [INFO] OK -> raw\BJS\BJS_history_20250801_20250831.json
+2026-07-16 20:36:24,959 [INFO] Backfill Beijing : 2025-09-01 -> 2025-09-30
+2026-07-16 20:36:27,211 [INFO] OK -> raw\BJS\BJS_history_20250901_20250930.json
+2026-07-16 20:36:28,214 [INFO] Backfill Beijing : 2025-10-01 -> 2025-10-31
+2026-07-16 20:36:30,409 [INFO] OK -> raw\BJS\BJS_history_20251001_20251031.json
+2026-07-16 20:36:31,410 [INFO] Backfill Beijing : 2025-11-01 -> 2025-11-30
+2026-07-16 20:36:34,089 [INFO] OK -> raw\BJS\BJS_history_20251101_20251130.json
+2026-07-16 20:36:35,090 [INFO] Backfill Beijing : 2025-12-01 -> 2025-12-31
+2026-07-16 20:36:37,140 [INFO] OK -> raw\BJS\BJS_history_20251201_20251231.json
+2026-07-16 20:36:38,141 [INFO] Backfill Beijing : 2026-01-01 -> 2026-01-31
+2026-07-16 20:36:40,534 [INFO] OK -> raw\BJS\BJS_history_20260101_20260131.json
+2026-07-16 20:36:41,581 [INFO] Backfill Beijing : 2026-02-01 -> 2026-02-28
+2026-07-16 20:36:43,672 [INFO] OK -> raw\BJS\BJS_history_20260201_20260228.json
+2026-07-16 20:36:44,673 [INFO] Backfill Beijing : 2026-03-01 -> 2026-03-31
+2026-07-16 20:36:46,939 [INFO] OK -> raw\BJS\BJS_history_20260301_20260331.json
+2026-07-16 20:36:47,940 [INFO] Backfill Beijing : 2026-04-01 -> 2026-04-30
+2026-07-16 20:36:50,336 [INFO] OK -> raw\BJS\BJS_history_20260401_20260430.json
+2026-07-16 20:36:51,338 [INFO] Backfill Beijing : 2026-05-01 -> 2026-05-31
+2026-07-16 20:36:53,661 [INFO] OK -> raw\BJS\BJS_history_20260501_20260531.json
+2026-07-16 20:36:54,667 [INFO] Backfill Beijing : 2026-06-01 -> 2026-06-30
+2026-07-16 20:36:56,836 [INFO] OK -> raw\BJS\BJS_history_20260601_20260630.json
+2026-07-16 20:36:57,837 [INFO] Backfill Beijing : 2026-07-01 -> 2026-07-15
+2026-07-16 20:36:59,783 [INFO] OK -> raw\BJS\BJS_history_20260701_20260715.json
+2026-07-16 20:37:00,785 [INFO] Backfill Londres : 2025-08-01 -> 2025-08-31
+2026-07-16 20:37:03,379 [INFO] OK -> raw\LON\LON_history_20250801_20250831.json
+2026-07-16 20:37:04,379 [INFO] Backfill Londres : 2025-09-01 -> 2025-09-30
+2026-07-16 20:37:06,498 [INFO] OK -> raw\LON\LON_history_20250901_20250930.json
+2026-07-16 20:37:07,499 [INFO] Backfill Londres : 2025-10-01 -> 2025-10-31
+2026-07-16 20:37:09,712 [INFO] OK -> raw\LON\LON_history_20251001_20251031.json
+2026-07-16 20:37:10,714 [INFO] Backfill Londres : 2025-11-01 -> 2025-11-30
+2026-07-16 20:37:13,077 [INFO] OK -> raw\LON\LON_history_20251101_20251130.json
+2026-07-16 20:37:14,079 [INFO] Backfill Londres : 2025-12-01 -> 2025-12-31
+2026-07-16 20:37:16,250 [INFO] OK -> raw\LON\LON_history_20251201_20251231.json
+2026-07-16 20:37:17,251 [INFO] Backfill Londres : 2026-01-01 -> 2026-01-31
+2026-07-16 20:37:19,577 [INFO] OK -> raw\LON\LON_history_20260101_20260131.json
+2026-07-16 20:37:20,580 [INFO] Backfill Londres : 2026-02-01 -> 2026-02-28
+2026-07-16 20:37:22,712 [INFO] OK -> raw\LON\LON_history_20260201_20260228.json
+2026-07-16 20:37:23,713 [INFO] Backfill Londres : 2026-03-01 -> 2026-03-31
+2026-07-16 20:37:25,669 [INFO] OK -> raw\LON\LON_history_20260301_20260331.json
+2026-07-16 20:37:26,671 [INFO] Backfill Londres : 2026-04-01 -> 2026-04-30
+2026-07-16 20:37:28,952 [INFO] OK -> raw\LON\LON_history_20260401_20260430.json
+2026-07-16 20:37:29,990 [INFO] Backfill Londres : 2026-05-01 -> 2026-05-31
+2026-07-16 20:37:32,378 [INFO] OK -> raw\LON\LON_history_20260501_20260531.json
+2026-07-16 20:37:33,381 [INFO] Backfill Londres : 2026-06-01 -> 2026-06-30
+2026-07-16 20:37:35,897 [INFO] OK -> raw\LON\LON_history_20260601_20260630.json
+2026-07-16 20:37:36,898 [INFO] Backfill Londres : 2026-07-01 -> 2026-07-15
+2026-07-16 20:37:38,898 [INFO] OK -> raw\LON\LON_history_20260701_20260715.json
+2026-07-16 20:37:39,900 [INFO] Backfill Paris : 2025-08-01 -> 2025-08-31
+2026-07-16 20:37:42,382 [INFO] OK -> raw\PAR\PAR_history_20250801_20250831.json
+2026-07-16 20:37:43,383 [INFO] Backfill Paris : 2025-09-01 -> 2025-09-30
+2026-07-16 20:37:45,645 [INFO] OK -> raw\PAR\PAR_history_20250901_20250930.json
+2026-07-16 20:37:46,646 [INFO] Backfill Paris : 2025-10-01 -> 2025-10-31
+2026-07-16 20:37:48,648 [INFO] OK -> raw\PAR\PAR_history_20251001_20251031.json
+2026-07-16 20:37:49,658 [INFO] Backfill Paris : 2025-11-01 -> 2025-11-30
+2026-07-16 20:37:51,903 [INFO] OK -> raw\PAR\PAR_history_20251101_20251130.json
+2026-07-16 20:37:52,907 [INFO] Backfill Paris : 2025-12-01 -> 2025-12-31
+2026-07-16 20:37:55,106 [INFO] OK -> raw\PAR\PAR_history_20251201_20251231.json
+2026-07-16 20:37:56,111 [INFO] Backfill Paris : 2026-01-01 -> 2026-01-31
+2026-07-16 20:37:58,431 [INFO] OK -> raw\PAR\PAR_history_20260101_20260131.json
+2026-07-16 20:37:59,448 [INFO] Backfill Paris : 2026-02-01 -> 2026-02-28
+2026-07-16 20:38:01,529 [INFO] OK -> raw\PAR\PAR_history_20260201_20260228.json
+2026-07-16 20:38:02,530 [INFO] Backfill Paris : 2026-03-01 -> 2026-03-31
+2026-07-16 20:38:05,018 [INFO] OK -> raw\PAR\PAR_history_20260301_20260331.json
+2026-07-16 20:38:06,019 [INFO] Backfill Paris : 2026-04-01 -> 2026-04-30
+2026-07-16 20:38:08,239 [INFO] OK -> raw\PAR\PAR_history_20260401_20260430.json
+2026-07-16 20:38:09,241 [INFO] Backfill Paris : 2026-05-01 -> 2026-05-31
+2026-07-16 20:38:11,529 [INFO] OK -> raw\PAR\PAR_history_20260501_20260531.json
+2026-07-16 20:38:12,530 [INFO] Backfill Paris : 2026-06-01 -> 2026-06-30
+2026-07-16 20:38:14,868 [INFO] OK -> raw\PAR\PAR_history_20260601_20260630.json
+2026-07-16 20:38:15,876 [INFO] Backfill Paris : 2026-07-01 -> 2026-07-15
+2026-07-16 20:38:18,406 [INFO] OK -> raw\PAR\PAR_history_20260701_20260715.json
+2026-07-16 20:38:19,409 [INFO] Backfill terminé : 60 succès, 0 échecs, 0 ignorés (déjà présents)
+2026-07-22 14:37:57,762 [INFO] Backfill démarré : 5 ville(s) x 12 mois = 60 appels prévus
+2026-07-22 14:37:57,765 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20250801_20250831.json
+2026-07-22 14:37:57,765 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20250901_20250930.json
+2026-07-22 14:37:57,766 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20251001_20251031.json
+2026-07-22 14:37:57,767 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20251101_20251130.json
+2026-07-22 14:37:57,767 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20251201_20251231.json
+2026-07-22 14:37:57,768 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20260101_20260131.json
+2026-07-22 14:37:57,768 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20260201_20260228.json
+2026-07-22 14:37:57,769 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20260301_20260331.json
+2026-07-22 14:37:57,770 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20260401_20260430.json
+2026-07-22 14:37:57,772 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20260501_20260531.json
+2026-07-22 14:37:57,773 [INFO] Déjà présent, ignoré : raw\AMS\AMS_history_20260601_20260630.json
+2026-07-22 14:37:57,777 [INFO] Backfill Amsterdam : 2026-07-01 -> 2026-07-21
+2026-07-22 14:38:00,811 [INFO] OK -> raw\AMS\AMS_history_20260701_20260721.json
+2026-07-22 14:38:01,815 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20250801_20250831.json
+2026-07-22 14:38:01,818 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20250901_20250930.json
+2026-07-22 14:38:01,819 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20251001_20251031.json
+2026-07-22 14:38:01,821 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20251101_20251130.json
+2026-07-22 14:38:01,832 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20251201_20251231.json
+2026-07-22 14:38:01,836 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20260101_20260131.json
+2026-07-22 14:38:01,838 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20260201_20260228.json
+2026-07-22 14:38:01,851 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20260301_20260331.json
+2026-07-22 14:38:01,858 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20260401_20260430.json
+2026-07-22 14:38:01,881 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20260501_20260531.json
+2026-07-22 14:38:01,896 [INFO] Déjà présent, ignoré : raw\TNR\TNR_history_20260601_20260630.json
+2026-07-22 14:38:01,905 [INFO] Backfill Antananarivo : 2026-07-01 -> 2026-07-21
+2026-07-22 14:38:05,518 [INFO] OK -> raw\TNR\TNR_history_20260701_20260721.json
+2026-07-22 14:38:06,520 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20250801_20250831.json
+2026-07-22 14:38:06,523 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20250901_20250930.json
+2026-07-22 14:38:06,526 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20251001_20251031.json
+2026-07-22 14:38:06,528 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20251101_20251130.json
+2026-07-22 14:38:06,531 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20251201_20251231.json
+2026-07-22 14:38:06,533 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20260101_20260131.json
+2026-07-22 14:38:06,535 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20260201_20260228.json
+2026-07-22 14:38:06,545 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20260301_20260331.json
+2026-07-22 14:38:06,551 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20260401_20260430.json
+2026-07-22 14:38:06,553 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20260501_20260531.json
+2026-07-22 14:38:06,557 [INFO] Déjà présent, ignoré : raw\BJS\BJS_history_20260601_20260630.json
+2026-07-22 14:38:06,559 [INFO] Backfill Beijing : 2026-07-01 -> 2026-07-21
+2026-07-22 14:38:08,866 [INFO] OK -> raw\BJS\BJS_history_20260701_20260721.json
+2026-07-22 14:38:09,868 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20250801_20250831.json
+2026-07-22 14:38:09,870 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20250901_20250930.json
+2026-07-22 14:38:09,874 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20251001_20251031.json
+2026-07-22 14:38:09,877 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20251101_20251130.json
+2026-07-22 14:38:09,879 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20251201_20251231.json
+2026-07-22 14:38:09,881 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20260101_20260131.json
+2026-07-22 14:38:09,885 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20260201_20260228.json
+2026-07-22 14:38:09,893 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20260301_20260331.json
+2026-07-22 14:38:09,908 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20260401_20260430.json
+2026-07-22 14:38:09,912 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20260501_20260531.json
+2026-07-22 14:38:09,914 [INFO] Déjà présent, ignoré : raw\LON\LON_history_20260601_20260630.json
+2026-07-22 14:38:09,917 [INFO] Backfill Londres : 2026-07-01 -> 2026-07-21
+2026-07-22 14:38:12,130 [INFO] OK -> raw\LON\LON_history_20260701_20260721.json
+2026-07-22 14:38:13,135 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20250801_20250831.json
+2026-07-22 14:38:13,136 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20250901_20250930.json
+2026-07-22 14:38:13,137 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20251001_20251031.json
+2026-07-22 14:38:13,139 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20251101_20251130.json
+2026-07-22 14:38:13,140 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20251201_20251231.json
+2026-07-22 14:38:13,142 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20260101_20260131.json
+2026-07-22 14:38:13,143 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20260201_20260228.json
+2026-07-22 14:38:13,144 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20260301_20260331.json
+2026-07-22 14:38:13,145 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20260401_20260430.json
+2026-07-22 14:38:13,147 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20260501_20260531.json
+2026-07-22 14:38:13,148 [INFO] Déjà présent, ignoré : raw\PAR\PAR_history_20260601_20260630.json
+2026-07-22 14:38:13,149 [INFO] Backfill Paris : 2026-07-01 -> 2026-07-21
+2026-07-22 14:38:16,063 [INFO] OK -> raw\PAR\PAR_history_20260701_20260721.json
+2026-07-22 14:38:17,064 [INFO] Backfill terminé : 5 succès, 0 échecs, 55 ignorés (déjà présents)
