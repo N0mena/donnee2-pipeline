@@ -16,7 +16,6 @@ URL_HISTORIQUE = "https://api.openweathermap.org/data/2.5/air_pollution/history"
 RACINE_PROJET = Path(__file__).resolve().parent.parent
 RAW_DIR = RACINE_PROJET / "raw"
 LOG_FILE = Path(__file__).resolve().parent / "logs" / "qualite_air.log"
-
 TIMEOUT_SECONDS = 15
 MAX_RETRIES = 3
 BACKOFF_BASE_SECONDS = 2
