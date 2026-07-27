@@ -208,3 +208,147 @@
 2026-07-22 15:01:39,416 [INFO] clean/qualite_air.csv reconstruit : 0 ligne(s) unique(s) (ville x heure)
 2026-07-22 15:02:02,106 [INFO] Reconstruction de clean/ à partir de 70 fichier(s) raw/
 2026-07-22 15:02:05,695 [INFO] clean/qualite_air.csv reconstruit : 41501 ligne(s) unique(s) (ville x heure)
+2026-07-27 14:04:16,071 [INFO] Backfill démarré : 5 ville(s) x 12 mois = 60 appels prévus
+2026-07-27 14:04:16,074 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20250801_20250831.json
+2026-07-27 14:04:16,074 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20250901_20250930.json
+2026-07-27 14:04:16,075 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20251001_20251031.json
+2026-07-27 14:04:16,076 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20251101_20251130.json
+2026-07-27 14:04:16,076 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20251201_20251231.json
+2026-07-27 14:04:16,077 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260101_20260131.json
+2026-07-27 14:04:16,078 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260201_20260228.json
+2026-07-27 14:04:16,078 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260301_20260331.json
+2026-07-27 14:04:16,079 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260401_20260430.json
+2026-07-27 14:04:16,088 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260501_20260531.json
+2026-07-27 14:04:16,091 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260601_20260630.json
+2026-07-27 14:04:16,092 [INFO] Backfill Amsterdam : 2026-07-01 -> 2026-07-26
+2026-07-27 14:04:20,190 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260701_20260726.json
+2026-07-27 14:04:21,192 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20250801_20250831.json
+2026-07-27 14:04:21,193 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20250901_20250930.json
+2026-07-27 14:04:21,193 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20251001_20251031.json
+2026-07-27 14:04:21,194 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20251101_20251130.json
+2026-07-27 14:04:21,195 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20251201_20251231.json
+2026-07-27 14:04:21,197 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260101_20260131.json
+2026-07-27 14:04:21,199 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260201_20260228.json
+2026-07-27 14:04:21,201 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260301_20260331.json
+2026-07-27 14:04:21,204 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260401_20260430.json
+2026-07-27 14:04:21,205 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260501_20260531.json
+2026-07-27 14:04:21,206 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260601_20260630.json
+2026-07-27 14:04:21,207 [INFO] Backfill Antananarivo : 2026-07-01 -> 2026-07-26
+2026-07-27 14:04:25,766 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260701_20260726.json
+2026-07-27 14:04:26,768 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20250801_20250831.json
+2026-07-27 14:04:26,769 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20250901_20250930.json
+2026-07-27 14:04:26,770 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20251001_20251031.json
+2026-07-27 14:04:26,771 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20251101_20251130.json
+2026-07-27 14:04:26,772 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20251201_20251231.json
+2026-07-27 14:04:26,772 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260101_20260131.json
+2026-07-27 14:04:26,773 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260201_20260228.json
+2026-07-27 14:04:26,774 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260301_20260331.json
+2026-07-27 14:04:26,775 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260401_20260430.json
+2026-07-27 14:04:26,776 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260501_20260531.json
+2026-07-27 14:04:26,777 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260601_20260630.json
+2026-07-27 14:04:26,778 [INFO] Backfill Beijing : 2026-07-01 -> 2026-07-26
+2026-07-27 14:04:41,197 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260701_20260726.json
+2026-07-27 14:04:42,204 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20250801_20250831.json
+2026-07-27 14:04:42,204 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20250901_20250930.json
+2026-07-27 14:04:42,210 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20251001_20251031.json
+2026-07-27 14:04:42,213 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20251101_20251130.json
+2026-07-27 14:04:42,215 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20251201_20251231.json
+2026-07-27 14:04:42,216 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260101_20260131.json
+2026-07-27 14:04:42,217 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260201_20260228.json
+2026-07-27 14:04:42,218 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260301_20260331.json
+2026-07-27 14:04:42,219 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260401_20260430.json
+2026-07-27 14:04:42,221 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260501_20260531.json
+2026-07-27 14:04:42,223 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260601_20260630.json
+2026-07-27 14:04:42,225 [INFO] Backfill Londres : 2026-07-01 -> 2026-07-26
+2026-07-27 14:04:46,032 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260701_20260726.json
+2026-07-27 14:04:47,073 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20250801_20250831.json
+2026-07-27 14:04:47,074 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20250901_20250930.json
+2026-07-27 14:04:47,077 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20251001_20251031.json
+2026-07-27 14:04:47,079 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20251101_20251130.json
+2026-07-27 14:04:47,089 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20251201_20251231.json
+2026-07-27 14:04:47,099 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260101_20260131.json
+2026-07-27 14:04:47,101 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260201_20260228.json
+2026-07-27 14:04:47,106 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260301_20260331.json
+2026-07-27 14:04:47,107 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260401_20260430.json
+2026-07-27 14:04:47,108 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260501_20260531.json
+2026-07-27 14:04:47,109 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260601_20260630.json
+2026-07-27 14:04:47,116 [INFO] Backfill Paris : 2026-07-01 -> 2026-07-26
+2026-07-27 14:04:51,390 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260701_20260726.json
+2026-07-27 14:04:52,392 [INFO] Backfill terminé : 5 succès, 0 échecs, 55 ignorés (déjà présents)
+2026-07-27 14:05:08,012 [INFO] Reconstruction de clean/ à partir de 75 fichier(s) raw/
+2026-07-27 14:05:11,450 [INFO] clean/qualite_air.csv reconstruit : 42101 ligne(s) unique(s) (ville x heure)
+2026-07-27 14:05:22,816 [INFO] Collecte en cours pour Amsterdam (AMS)
+2026-07-27 14:05:25,025 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_20260727T110522Z.json
+2026-07-27 14:05:25,026 [INFO] Collecte en cours pour Antananarivo (TNR)
+2026-07-27 14:05:27,037 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_20260727T110522Z.json
+2026-07-27 14:05:27,037 [INFO] Collecte en cours pour Beijing (BJS)
+2026-07-27 14:05:29,049 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_20260727T110522Z.json
+2026-07-27 14:05:29,050 [INFO] Collecte en cours pour Londres (LON)
+2026-07-27 14:05:30,954 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_20260727T110522Z.json
+2026-07-27 14:05:30,956 [INFO] Collecte en cours pour Paris (PAR)
+2026-07-27 14:05:33,098 [INFO] OK -> C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_20260727T110522Z.json
+2026-07-27 14:05:33,099 [INFO] Collecte terminée : 5 succès, 0 échecs sur 5 villes
+2026-07-27 14:05:47,103 [INFO] Backfill démarré : 5 ville(s) x 12 mois = 60 appels prévus
+2026-07-27 14:05:47,103 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20250801_20250831.json
+2026-07-27 14:05:47,104 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20250901_20250930.json
+2026-07-27 14:05:47,105 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20251001_20251031.json
+2026-07-27 14:05:47,106 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20251101_20251130.json
+2026-07-27 14:05:47,106 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20251201_20251231.json
+2026-07-27 14:05:47,107 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260101_20260131.json
+2026-07-27 14:05:47,107 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260201_20260228.json
+2026-07-27 14:05:47,108 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260301_20260331.json
+2026-07-27 14:05:47,108 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260401_20260430.json
+2026-07-27 14:05:47,110 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260501_20260531.json
+2026-07-27 14:05:47,112 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260601_20260630.json
+2026-07-27 14:05:47,112 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\AMS\AMS_history_20260701_20260726.json
+2026-07-27 14:05:47,113 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20250801_20250831.json
+2026-07-27 14:05:47,114 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20250901_20250930.json
+2026-07-27 14:05:47,114 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20251001_20251031.json
+2026-07-27 14:05:47,115 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20251101_20251130.json
+2026-07-27 14:05:47,115 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20251201_20251231.json
+2026-07-27 14:05:47,116 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260101_20260131.json
+2026-07-27 14:05:47,116 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260201_20260228.json
+2026-07-27 14:05:47,117 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260301_20260331.json
+2026-07-27 14:05:47,117 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260401_20260430.json
+2026-07-27 14:05:47,117 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260501_20260531.json
+2026-07-27 14:05:47,118 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260601_20260630.json
+2026-07-27 14:05:47,123 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\TNR\TNR_history_20260701_20260726.json
+2026-07-27 14:05:47,124 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20250801_20250831.json
+2026-07-27 14:05:47,125 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20250901_20250930.json
+2026-07-27 14:05:47,126 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20251001_20251031.json
+2026-07-27 14:05:47,126 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20251101_20251130.json
+2026-07-27 14:05:47,128 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20251201_20251231.json
+2026-07-27 14:05:47,128 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260101_20260131.json
+2026-07-27 14:05:47,129 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260201_20260228.json
+2026-07-27 14:05:47,129 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260301_20260331.json
+2026-07-27 14:05:47,130 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260401_20260430.json
+2026-07-27 14:05:47,130 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260501_20260531.json
+2026-07-27 14:05:47,130 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260601_20260630.json
+2026-07-27 14:05:47,131 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\BJS\BJS_history_20260701_20260726.json
+2026-07-27 14:05:47,131 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20250801_20250831.json
+2026-07-27 14:05:47,135 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20250901_20250930.json
+2026-07-27 14:05:47,135 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20251001_20251031.json
+2026-07-27 14:05:47,137 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20251101_20251130.json
+2026-07-27 14:05:47,138 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20251201_20251231.json
+2026-07-27 14:05:47,141 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260101_20260131.json
+2026-07-27 14:05:47,142 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260201_20260228.json
+2026-07-27 14:05:47,143 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260301_20260331.json
+2026-07-27 14:05:47,147 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260401_20260430.json
+2026-07-27 14:05:47,148 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260501_20260531.json
+2026-07-27 14:05:47,152 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260601_20260630.json
+2026-07-27 14:05:47,152 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\LON\LON_history_20260701_20260726.json
+2026-07-27 14:05:47,153 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20250801_20250831.json
+2026-07-27 14:05:47,153 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20250901_20250930.json
+2026-07-27 14:05:47,154 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20251001_20251031.json
+2026-07-27 14:05:47,154 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20251101_20251130.json
+2026-07-27 14:05:47,155 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20251201_20251231.json
+2026-07-27 14:05:47,157 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260101_20260131.json
+2026-07-27 14:05:47,160 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260201_20260228.json
+2026-07-27 14:05:47,161 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260301_20260331.json
+2026-07-27 14:05:47,161 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260401_20260430.json
+2026-07-27 14:05:47,162 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260501_20260531.json
+2026-07-27 14:05:47,162 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260601_20260630.json
+2026-07-27 14:05:47,162 [INFO] Déjà présent, ignoré : C:\Users\Dell\Documents\Donnees2\aqi-pipeline\raw\PAR\PAR_history_20260701_20260726.json
+2026-07-27 14:05:47,163 [INFO] Backfill terminé : 0 succès, 0 échecs, 60 ignorés (déjà présents)
+2026-07-27 14:05:52,046 [INFO] Reconstruction de clean/ à partir de 80 fichier(s) raw/
+2026-07-27 14:05:54,178 [INFO] clean/qualite_air.csv reconstruit : 42106 ligne(s) unique(s) (ville x heure)
