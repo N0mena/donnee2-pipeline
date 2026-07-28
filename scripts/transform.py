@@ -46,6 +46,12 @@ def periode_journee(heure: int) -> str:
 def get_connexion():
     """Retourne une connexion PostgreSQL via les variables d'env."""
     champs = ["PGHOST", "PGPORT", "PGDATABASE", "PGUSER", "PGPASSWORD"]
+    manquants = [c for c in champs if not os.environ.get(c)]
+    if manquants:
+        raise EnvironmentError(
+            "Variables d'environnement manquantes : " + ", ".join(manquants)
+            + "\nCopiez .env.example en .env et remplissez les valeurs."
+        )
     return psycopg2.connect(
         host=os.environ["PGHOST"],
         port=os.environ["PGPORT"],
@@ -224,6 +230,32 @@ def charger_csv(chemin: Path) -> list[dict]:
     return lignes
 
 
+def charger_lignes(lignes: list[dict], reset: bool = False) -> int:
+    """Charge une liste de lignes dans le star schema (usage incrémental).
+    Retourne le nombre de mesures insérées."""
+    if not lignes:
+        logger.info("Aucune ligne à charger.")
+        return 0
+
+    conn = get_connexion()
+    try:
+        if reset:
+            reset_tables(conn)
+
+        map_ville = charger_dim_ville(conn, lignes)
+        map_date = charger_dim_date(conn, lignes)
+        map_heure = charger_dim_heure(conn, lignes)
+        count = charger_fait(conn, lignes, map_ville, map_date, map_heure)
+        logger.info("Chargement incrémental terminé : %d mesures.", count)
+        return count
+    except Exception as e:
+        conn.rollback()
+        logger.error("Erreur lors du chargement : %s", e)
+        raise
+    finally:
+        conn.close()
+
+
 def main():
     parser = argparse.ArgumentParser(description="Charge les données dans l'entrepôt (star schema).")
     parser.add_argument("--csv", type=Path, default=CLEAN_FILE, help="Chemin vers le CSV nettoyé.")
@@ -235,24 +267,7 @@ def main():
         return
 
     lignes = charger_csv(args.csv)
-    conn = get_connexion()
-
-    try:
-        if args.reset:
-            reset_tables(conn)
-
-        map_ville = charger_dim_ville(conn, lignes)
-        map_date = charger_dim_date(conn, lignes)
-        map_heure = charger_dim_heure(conn, lignes)
-        charger_fait(conn, lignes, map_ville, map_date, map_heure)
-
-        logger.info("Chargement terminé avec succès.")
-    except Exception as e:
-        conn.rollback()
-        logger.error("Erreur lors du chargement : %s", e)
-        raise
-    finally:
-        conn.close()
+    charger_lignes(lignes, reset=args.reset)
 
 
 if __name__ == "__main__":
