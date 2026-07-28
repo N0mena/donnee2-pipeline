@@ -9,6 +9,7 @@ Usage :
 """
 
 import csv
+import os
 import argparse
 import logging
 from datetime import datetime, date, time
@@ -16,6 +17,9 @@ from pathlib import Path
 
 import psycopg2
 from psycopg2.extras import execute_values
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 from commun import RACINE_PROJET, logger
 
@@ -41,12 +45,13 @@ def periode_journee(heure: int) -> str:
 
 def get_connexion():
     """Retourne une connexion PostgreSQL via les variables d'env."""
+    champs = ["PGHOST", "PGPORT", "PGDATABASE", "PGUSER", "PGPASSWORD"]
     return psycopg2.connect(
-        host="localhost",
-        port=5432,
-        dbname="qualite_air_dw",
-        user="postgres",
-        password="postgres",
+        host=os.environ["PGHOST"],
+        port=os.environ["PGPORT"],
+        dbname=os.environ["PGDATABASE"],
+        user=os.environ["PGUSER"],
+        password=os.environ["PGPASSWORD"],
     )
 
 
