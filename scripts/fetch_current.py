@@ -1,15 +1,3 @@
-"""
-Pipeline complet : Collecte horaire → Nettoyage → Chargement → EDA.
-
-Récupère les données de qualité de l'air en temps réel pour toutes les villes,
-les nettoie, les charge dans l'entrepôt PostgreSQL (star schema), puis produit
-une analyse exploratoire (EDA) des résultats.
-
-Usage :
-    python fetch_current.py
-    python fetch_current.py --eda-only   (EDA sans collecte)
-"""
-
 import csv
 import json
 import argparse
@@ -29,8 +17,6 @@ from commun import (
 from Clean import extraire_lignes, CLEAN_DIR, CLEAN_FILE, COLONNES, POLLUANTS
 from transform import get_connexion, charger_lignes
 
-
-# ── ETAPE 1 : EXTRACT ─────────────────────────────────────────
 
 def collecter() -> int:
     """Collecte les données horaires courantes pour toutes les villes.
@@ -67,10 +53,7 @@ def collecter() -> int:
     return succes
 
 
-# ── ETAPE 2 : CLEAN ───────────────────────────────────────────
-
 def nettoyer() -> list[dict]:
-    """Reconstruit le CSV clean à partir des fichiers raw et retourne les lignes."""
     fichiers = sorted(RAW_DIR.glob("*/*.json"))
     logger.info("[CLEAN] Reconstruction à partir de %d fichier(s) raw/", len(fichiers))
 
@@ -95,20 +78,16 @@ def nettoyer() -> list[dict]:
     return lignes_triees
 
 
-# ── ETAPE 3 : TRANSFORM + LOAD ────────────────────────────────
 
 def transformer_charger(lignes: list[dict]) -> int:
-    """Charge les lignes nettoyées dans le star schema PostgreSQL."""
     logger.info("[LOAD] Chargement de %d mesures dans l'entrepôt...", len(lignes))
     count = charger_lignes(lignes)
     logger.info("[LOAD] %d mesures insérées.", count)
     return count
 
 
-# ── ETAPE 4 : EDA (Exploratory Data Analysis) ─────────────────
 
 def eda():
-    """Exécute des requêtes analytiques sur l'entrepôt et journalise les résultats."""
     logger.info("═══ DÉBUT EDA ═══")
     conn = get_connexion()
     cur = conn.cursor()
@@ -235,8 +214,6 @@ def eda():
     conn.close()
     logger.info("═══ FIN EDA ═══")
 
-
-# ── ORCHESTRATION ──────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(

@@ -1,13 +1,3 @@
-"""
-Transforme les données nettoyées (qualite_air.csv) et les charge
-dans l'entrepôt de données PostgreSQL (schéma en étoile).
-
-Usage :
-    python transform.py
-    python transform.py --csv ../data/clean/qualite_air.csv
-    python transform.py --reset   (vide les tables avant rechargement)
-"""
-
 import csv
 import os
 import argparse
@@ -44,7 +34,6 @@ def periode_journee(heure: int) -> str:
 
 
 def get_connexion():
-    """Retourne une connexion PostgreSQL via les variables d'env."""
     champs = ["PGHOST", "PGPORT", "PGDATABASE", "PGUSER", "PGPASSWORD"]
     manquants = [c for c in champs if not os.environ.get(c)]
     if manquants:
@@ -62,7 +51,6 @@ def get_connexion():
 
 
 def reset_tables(conn):
-    """Vide toutes les tables du schéma en étoile."""
     cur = conn.cursor()
     cur.execute("TRUNCATE fait_qualite_air, dim_heure, dim_date, dim_ville RESTART IDENTITY CASCADE;")
     conn.commit()
@@ -71,7 +59,6 @@ def reset_tables(conn):
 
 
 def charger_dim_ville(conn, lignes: list[dict]) -> dict[str, int]:
-    """Insère les villes uniques et retourne un mapping abbr -> ville_id."""
     villes: dict[str, dict] = {}
     for ligne in lignes:
         abbr = ligne["abbr"]
@@ -104,7 +91,6 @@ def charger_dim_ville(conn, lignes: list[dict]) -> dict[str, int]:
 
 
 def charger_dim_date(conn, lignes: list[dict]) -> dict[date, int]:
-    """Insère les dates uniques et retourne un mapping date -> date_id."""
     dates_uniques: dict[str, dict] = {}
     for ligne in lignes:
         d = ligne["date_utc"]
@@ -145,7 +131,6 @@ def charger_dim_date(conn, lignes: list[dict]) -> dict[date, int]:
 
 
 def charger_dim_heure(conn, lignes: list[dict]) -> dict[time, int]:
-    """Insère les heures uniques et retourne un mapping heure -> heure_id."""
     heures_uniques: dict[str, dict] = {}
     for ligne in lignes:
         h = ligne["heure_utc"]
@@ -181,7 +166,6 @@ def charger_dim_heure(conn, lignes: list[dict]) -> dict[time, int]:
 
 
 def charger_fait(conn, lignes: list[dict], map_ville: dict, map_date: dict, map_heure: dict) -> int:
-    """Insère les mesures dans la table de fait. Retourne le nombre de lignes insérées."""
     cur = conn.cursor()
     batch = []
     for ligne in lignes:
@@ -222,7 +206,6 @@ def charger_fait(conn, lignes: list[dict], map_ville: dict, map_date: dict, map_
 
 
 def charger_csv(chemin: Path) -> list[dict]:
-    """Lit le CSV nettoyé et retourne la liste des lignes."""
     with open(chemin, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         lignes = list(reader)
@@ -231,8 +214,6 @@ def charger_csv(chemin: Path) -> list[dict]:
 
 
 def charger_lignes(lignes: list[dict], reset: bool = False) -> int:
-    """Charge une liste de lignes dans le star schema (usage incrémental).
-    Retourne le nombre de mesures insérées."""
     if not lignes:
         logger.info("Aucune ligne à charger.")
         return 0
