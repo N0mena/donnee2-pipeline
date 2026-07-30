@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: ${PGDATABASE:-qualite_air_dw}
+      POSTGRES_USER: ${PGUSER:-postgres}
+      POSTGRES_PASSWORD: ${PGPASSWORD:-postgres}
+      PGPORT: ${PGPORT:-5432}
+      PGHOST: localhost
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./data/raw:/raw_data:ro
+      - ./data/clean:/clean_data:ro
+      - ./data/separated_clean:/separated_clean_data:ro
+      - ./data/star_schema:/star_schema:ro
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    command: >-
+      postgres
+      -c shared_buffers=256MB
+      -c max_connections=200
+
+  airflow:
+    build: .
+    image: donnee2-pipeline/airflow:latest
+    container_name: airflow
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:postgres@postgres:5432/qualite_air_dw
+      AIRFLOW__WEBSERVER__EXPOSE_PROMETHEUS_PORT: 'true'
+      AIRFLOW__LOGGING__LOGGING_LEVEL: INFO
+      AIRFLOW__LOGGING__FAB_LOGGING_LEVEL: WARNING
+      AIRFLOW__LOGGING__LOGGING_CONFIG: /opt/airflow/config/logging.conf
+      PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/airflow/bin:/opt/airflow/venv/bin:/home/airflow/.local/bin
+      PYTHONPATH: /opt/airflow
+      AIRFLOW_HOME: /opt/airflow
+    volumes:
+      - ./airflow:/opt/airflow/dags:ro
+      - ./scripts:/opt/airflow/scripts:ro
+      - ./data:/opt/airflow/data
+      - airflow_logs:/opt/airflow/logs
+      - airflow_plugins:/opt/airflow/plugins
+    working_dir: /opt/airflow
+    command: airflow standalone
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  pipeline_runner:
+    build: .
+    image: donnee2-pipeline/airflow:latest
+    container_name: pipeline_runner
+    depends_on:
+      - postgres
+    environment:
+      PYTHONPATH: /opt/airflow
+      AIRFLOW_HOME: /opt/airflow
+      OPENWEATHER_API_KEY: ${OPENWEATHER_API_KEY}
+      PGHOST: postgres
+      PGPORT: 5432
+      PGDATABASE: qualite_air_dw
+      PGUSER: postgres
+      PGPASSWORD: postgres
+    volumes:
+      - ./airflow:/opt/airflow/dags:ro
+      - ./scripts:/opt/airflow/scripts:ro
+      - ./data:/opt/airflow/data
+      - airflow_logs:/opt/airflow/logs
+      - airflow_plugins:/opt/airflow/plugins
+    working_dir: /opt/airflow
+    command: echo "Pipeline ready. Use: airflow standalone to start Airflow, or run scripts from the scripts/ directory."
+
+volumes:
+  postgres_data:
+  airflow_logs:
+  airflow_plugins:
+  
+networks:
+  default:
+    driver: bridge

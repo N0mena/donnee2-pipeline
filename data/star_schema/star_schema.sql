@@ -1,19 +1,3 @@
--- ============================================================
--- Schéma en étoile (Star Schema) pour l'entrepôt de données
--- sur la qualité de l'air.
--- Base de données : PostgreSQL
--- ============================================================
-
--- Suppression des objets existants (ordre inverse des dépendances)
-DROP TABLE IF EXISTS fait_qualite_air CASCADE;
-DROP TABLE IF EXISTS dim_heure CASCADE;
-DROP TABLE IF EXISTS dim_date CASCADE;
-DROP TABLE IF EXISTS dim_ville CASCADE;
-
--- ============================================================
--- TABLE DE DIMENSION : dim_ville
--- Stocke les informations géographiques de chaque ville.
--- ============================================================
 CREATE TABLE dim_ville (
     ville_id    SERIAL PRIMARY KEY,
     ville       VARCHAR(100) NOT NULL,
@@ -23,10 +7,6 @@ CREATE TABLE dim_ville (
     longitude   DOUBLE PRECISION NOT NULL
 );
 
--- ============================================================
--- TABLE DE DIMENSION : dim_date
--- Stocke les composantes calendaires de chaque mesure.
--- ============================================================
 CREATE TABLE dim_date (
     date_id       SERIAL PRIMARY KEY,
     date_utc      DATE NOT NULL UNIQUE,
@@ -39,10 +19,6 @@ CREATE TABLE dim_date (
     nom_mois      VARCHAR(10) NOT NULL
 );
 
--- ============================================================
--- TABLE DE DIMENSION : dim_heure
--- Stocke les composantes horaires de chaque mesure.
--- ============================================================
 CREATE TABLE dim_heure (
     heure_id          SERIAL PRIMARY KEY,
     heure_utc         TIME NOT NULL UNIQUE,
@@ -53,11 +29,6 @@ CREATE TABLE dim_heure (
     --                   'apres-midi' (12-17), 'soiree' (18-23)
 );
 
--- ============================================================
--- TABLE DE FAIT : fait_qualite_air
--- Mesures horaires de la qualité de l'air par ville.
--- Chaque ligne = une mesure (ville x date x heure).
--- ============================================================
 CREATE TABLE fait_qualite_air (
     fait_id     SERIAL PRIMARY KEY,
     ville_id    INT NOT NULL REFERENCES dim_ville(ville_id),
@@ -75,17 +46,13 @@ CREATE TABLE fait_qualite_air (
     UNIQUE (ville_id, date_id, heure_id)
 );
 
--- ============================================================
--- INDEX pour optimiser les requêtes analytiques
--- ============================================================
+
 CREATE INDEX idx_fait_ville   ON fait_qualite_air(ville_id);
 CREATE INDEX idx_fait_date    ON fait_qualite_air(date_id);
 CREATE INDEX idx_fait_heure   ON fait_qualite_air(heure_id);
 CREATE INDEX idx_fait_aqi     ON fait_qualite_air(aqi);
 
--- ============================================================
--- VUES utiles pour l'exploration rapide
--- ============================================================
+
 CREATE OR REPLACE VIEW vue_qualite_air_complete AS
 SELECT
     f.fait_id,
