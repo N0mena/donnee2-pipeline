@@ -1,0 +1,33 @@
+{
+  "coord": {
+    "lon": 116.4074,
+    "lat": 39.9042
+  },
+  "list": [
+    {
+      "main": {
+        "aqi": 5
+      },
+      "components": {
+        "co": 426.67,
+        "no": 0,
+        "no2": 17.12,
+        "o3": 58,
+        "so2": 8.79,
+        "pm2_5": 118.01,
+        "pm10": 121.24,
+        "nh3": 6.19
+      },
+      "dt": 1784223178
+    }
+  ],
+  "_meta": {
+    "ville": "Beijing",
+    "abbr": "BJS",
+    "pays": "CN",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "type": "collecte_horaire",
+    "collecte_le": "20260716T173253Z"
+  }
+}
