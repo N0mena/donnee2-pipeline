@@ -8,7 +8,6 @@ from datetime import datetime, timedelta, timezone
 
 import requests
 from airflow.sdk import Variable, dag, task
-from scripts.collect import collecter_toutes_les_villes
 
 
 DEFAULT_CITIES = ["Amsterdam", "Antananarivo", "Beijing", "London", "Paris"]
