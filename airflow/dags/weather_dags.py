@@ -33,7 +33,7 @@ default_args = {
 }
 
 
-def month_ranges(months_back: int) -> list[tuple[datetime, datetime]]
+def month_ranges(months_back: int) -> list[tuple[datetime, datetime]]:
     ranges = []
     now = datetime.now(timezone.utc)
     end = now
