@@ -88,12 +88,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> ⚠️ `requirements.txt` ne liste actuellement que `requests` et `python-dotenv`.
-> `transform.py` a aussi besoin de `psycopg2-binary`, et `separate_cities.py` de
-> `pandas`. En attendant la mise à jour du fichier, installez-les manuellement :
-> ```bash
-> pip install psycopg2-binary pandas
-> ```
 
 ## Configuration
 
