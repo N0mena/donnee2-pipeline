@@ -29,6 +29,7 @@ load_dotenv(PROJECT_ROOT / ".env")
 from scripts.Clean import CLEAN_FILE, construire_clean
 from scripts.collect import collecter_par_heure
 from scripts.separate_cities import separer_par_ville
+from scripts.load_warehouse import charger_csv, charger_lignes
 
 
 def extract_task_fn(**kwargs):
@@ -42,10 +43,13 @@ def transform_task_fn(**kwargs):
     construire_clean()
     return str(CLEAN_FILE)
 
-
 def load_task_fn(**kwargs):
     fichiers = separer_par_ville(CLEAN_FILE)
     return [str(f) for f in fichiers]
+
+
+def load_db_task_fn(**kwargs):
+    return charger_lignes(charger_csv(CLEAN_FILE))
 
 
 default_args = {
@@ -61,7 +65,8 @@ with DAG(
     default_args=default_args,
     description=(
         "ETL horaire de la qualité de l'air pour les 5 villes : "
-        "collecte (API OpenWeather) -> nettoyage (clean/) -> CSV par ville (separated_clean/)"
+        "collecte (API OpenWeather) -> nettoyage (clean/) -> CSV par ville (separated_clean/) "
+        "-> chargement incrémental dans PostgreSQL local ( star schema)"
     ),
     schedule="@hourly",
     start_date=datetime(2026, 8, 1),
@@ -80,6 +85,10 @@ with DAG(
         task_id="load_entrepot",
         python_callable=load_task_fn,
     )
+    load_db_task = PythonOperator(
+        task_id="load_db_star_schema",
+        python_callable=load_db_task_fn,
+    )
 
-    extract_task >> transform_task >> load_task
+    extract_task >> transform_task >> load_task >> load_db_task
 
