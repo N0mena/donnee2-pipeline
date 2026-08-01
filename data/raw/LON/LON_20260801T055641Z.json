@@ -1,0 +1,33 @@
+{
+  "coord": {
+    "lon": -0.1276,
+    "lat": 51.5073
+  },
+  "list": [
+    {
+      "main": {
+        "aqi": 2
+      },
+      "components": {
+        "co": 104.95,
+        "no": 0.2,
+        "no2": 8.27,
+        "o3": 66.74,
+        "so2": 4.3,
+        "pm2_5": 1.68,
+        "pm10": 3.45,
+        "nh3": 2.52
+      },
+      "dt": 1785563423
+    }
+  ],
+  "_meta": {
+    "ville": "Londres",
+    "abbr": "LON",
+    "pays": "GB",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "type": "collecte_horaire",
+    "collecte_le": "20260801T055641Z"
+  }
+}

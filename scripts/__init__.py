@@ -1,0 +1,1 @@
+from scripts.collect import collecter_toutes_les_villes

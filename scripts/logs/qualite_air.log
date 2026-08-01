@@ -208,3 +208,8 @@
 2026-07-22 15:01:39,416 [INFO] clean/qualite_air.csv reconstruit : 0 ligne(s) unique(s) (ville x heure)
 2026-07-22 15:02:02,106 [INFO] Reconstruction de clean/ à partir de 70 fichier(s) raw/
 2026-07-22 15:02:05,695 [INFO] clean/qualite_air.csv reconstruit : 41501 ligne(s) unique(s) (ville x heure)
+2026-08-01 08:22:17,352 [INFO] [LOAD] Amsterdam (AMS) : 8305 lignes -> /home/alida/project/donnee2-pipeline/data/separated_clean/amsterdam_qa.csv
+2026-08-01 08:22:17,557 [INFO] [LOAD] Antananarivo (TNR) : 8257 lignes -> /home/alida/project/donnee2-pipeline/data/separated_clean/antananarivo_qa.csv
+2026-08-01 08:22:17,694 [INFO] [LOAD] Beijing (BJS) : 8329 lignes -> /home/alida/project/donnee2-pipeline/data/separated_clean/beijing_qa.csv
+2026-08-01 08:22:17,953 [INFO] [LOAD] Londres (LON) : 8305 lignes -> /home/alida/project/donnee2-pipeline/data/separated_clean/londres_qa.csv
+2026-08-01 08:22:18,208 [INFO] [LOAD] Paris (PAR) : 8305 lignes -> /home/alida/project/donnee2-pipeline/data/separated_clean/paris_qa.csv

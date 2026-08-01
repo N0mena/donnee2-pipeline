@@ -3,9 +3,9 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from commun import RACINE_PROJET, RAW_DIR, logger
+from .commun import RACINE_PROJET, RAW_DIR, logger
 
-CLEAN_DIR = RACINE_PROJET / "clean"
+CLEAN_DIR = RACINE_PROJET / "data" / "clean"
 CLEAN_FILE = CLEAN_DIR / "qualite_air.csv"
 
 COLONNES = [
