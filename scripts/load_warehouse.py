@@ -11,9 +11,9 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
-from commun import RACINE_PROJET, logger
+from .commun import RACINE_PROJET, logger
 
-CLEAN_FILE = RACINE_PROJET / "clean" / "qualite_air.csv"
+CLEAN_FILE = RACINE_PROJET / "data" / "clean" / "qualite_air.csv"
 
 NOMS_JOUR = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"]
 NOMS_MOIS = [
@@ -78,7 +78,8 @@ def charger_dim_ville(conn, lignes: list[dict]) -> dict[str, int]:
 
     execute_values(
         cur,
-        "INSERT INTO dim_ville (ville, abbr, pays, latitude, longitude) VALUES %s",
+        "INSERT INTO dim_ville (ville, abbr, pays, latitude, longitude) VALUES %s "
+        "ON CONFLICT (abbr) DO NOTHING",
         valeurs,
     )
 
@@ -118,7 +119,8 @@ def charger_dim_date(conn, lignes: list[dict]) -> dict[date, int]:
 
     execute_values(
         cur,
-        "INSERT INTO dim_date (date_utc, jour, mois, trimestre, annee, jour_semaine, nom_jour, nom_mois) VALUES %s",
+        "INSERT INTO dim_date (date_utc, jour, mois, trimestre, annee, jour_semaine, nom_jour, nom_mois) "
+        "VALUES %s ON CONFLICT (date_utc) DO NOTHING",
         valeurs,
     )
 
@@ -153,7 +155,8 @@ def charger_dim_heure(conn, lignes: list[dict]) -> dict[time, int]:
 
     execute_values(
         cur,
-        "INSERT INTO dim_heure (heure_utc, heure, minute, periode_journee) VALUES %s",
+        "INSERT INTO dim_heure (heure_utc, heure, minute, periode_journee) "
+        "VALUES %s ON CONFLICT (heure_utc) DO NOTHING",
         valeurs,
     )
 
@@ -193,7 +196,8 @@ def charger_fait(conn, lignes: list[dict], map_ville: dict, map_date: dict, map_
         cur,
         """INSERT INTO fait_qualite_air
            (ville_id, date_id, heure_id, aqi, co, no, no2, o3, so2, pm2_5, pm10, nh3)
-           VALUES %s""",
+           VALUES %s
+           ON CONFLICT (ville_id, date_id, heure_id) DO NOTHING""",
         batch,
         page_size=5000,
     )
