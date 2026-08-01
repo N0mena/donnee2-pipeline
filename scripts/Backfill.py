@@ -3,7 +3,7 @@ import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from commun import (
+from .commun import (
     API_KEY,
     VILLES,
     URL_HISTORIQUE,

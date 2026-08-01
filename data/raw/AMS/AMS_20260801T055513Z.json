@@ -1,0 +1,33 @@
+{
+  "coord": {
+    "lon": 4.9041,
+    "lat": 52.3676
+  },
+  "list": [
+    {
+      "main": {
+        "aqi": 1
+      },
+      "components": {
+        "co": 138.65,
+        "no": 3.96,
+        "no2": 23.5,
+        "o3": 14.37,
+        "so2": 2.2,
+        "pm2_5": 9.6,
+        "pm10": 13.03,
+        "nh3": 5.16
+      },
+      "dt": 1785563659
+    }
+  ],
+  "_meta": {
+    "ville": "Amsterdam",
+    "abbr": "AMS",
+    "pays": "NL",
+    "lat": 52.3676,
+    "lon": 4.9041,
+    "type": "collecte_horaire",
+    "collecte_le": "20260801T055513Z"
+  }
+}
